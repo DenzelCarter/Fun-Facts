@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A36BD319D3704E0060BE26 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A36BD219D3704E0060BE26 /* FactBook.swift */; };
+		06A36BD519D3878A0060BE26 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A36BD419D3878A0060BE26 /* ColorWheel.swift */; };
 		06DA474819CCE59F00D6F7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA474719CCE59F00D6F7A7 /* AppDelegate.swift */; };
 		06DA474A19CCE59F00D6F7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA474919CCE59F00D6F7A7 /* ViewController.swift */; };
 		06DA474D19CCE59F00D6F7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA474B19CCE59F00D6F7A7 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A36BD219D3704E0060BE26 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		06A36BD419D3878A0060BE26 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		06DA474219CCE59F00D6F7A7 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA474619CCE59F00D6F7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06DA474719CCE59F00D6F7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 		06DA475719CCE59F00D6F7A7 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA475C19CCE59F00D6F7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06DA475D19CCE59F00D6F7A7 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
+		06DA476719CCE84F00D6F7A7 /* scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scratchpad.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +64,10 @@
 		06DA473919CCE59F00D6F7A7 = {
 			isa = PBXGroup;
 			children = (
+				06DA474319CCE59F00D6F7A7 /* Products */,
 				06DA474419CCE59F00D6F7A7 /* FunFacts */,
 				06DA475A19CCE59F00D6F7A7 /* FunFactsTests */,
-				06DA474319CCE59F00D6F7A7 /* Products */,
+				06DA476819CCE88300D6F7A7 /* playgrounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				06DA474719CCE59F00D6F7A7 /* AppDelegate.swift */,
+				06A36BD219D3704E0060BE26 /* FactBook.swift */,
 				06DA474919CCE59F00D6F7A7 /* ViewController.swift */,
 				06DA474B19CCE59F00D6F7A7 /* Main.storyboard */,
 				06DA474E19CCE59F00D6F7A7 /* Images.xcassets */,
 				06DA475019CCE59F00D6F7A7 /* LaunchScreen.xib */,
 				06DA474519CCE59F00D6F7A7 /* Supporting Files */,
+				06A36BD419D3878A0060BE26 /* ColorWheel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -110,6 +118,14 @@
 				06DA475C19CCE59F00D6F7A7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06DA476819CCE88300D6F7A7 /* playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				06DA476719CCE84F00D6F7A7 /* scratchpad.playground */,
+			);
+			name = playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A36BD319D3704E0060BE26 /* FactBook.swift in Sources */,
 				06DA474A19CCE59F00D6F7A7 /* ViewController.swift in Sources */,
 				06DA474819CCE59F00D6F7A7 /* AppDelegate.swift in Sources */,
+				06A36BD519D3878A0060BE26 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +423,7 @@
 				06DA476319CCE59F00D6F7A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06DA476419CCE59F00D6F7A7 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +432,7 @@
 				06DA476619CCE59F00D6F7A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

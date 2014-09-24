@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var funFactLabel: UILabel!
+    @IBOutlet weak var funFactButton: UIButton!
+    
+    let factBook = FactBook()
+    let colorWheel = ColorWheel()
 
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        funFactLabel.text = factBook.randomFact()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +26,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showFunFact() {
+        view.backgroundColor = colorWheel.randomColor()
+        funFactButton.tintColor = colorWheel.randomColor()
+        funFactLabel.text = factBook.randomFact()
+    }
 
 }
 
